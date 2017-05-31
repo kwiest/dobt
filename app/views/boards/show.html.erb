@@ -1,0 +1,19 @@
+<h1>Tic Tac Toe</h1>
+
+<div id="board">
+  <div class="row" id="row-1">
+    <% @row1.each do |cell| %>
+      <%= render cell %>
+    <% end %>
+  </div>
+  <div class="row" id="row-2">
+    <% @row2.each do |cell| %>
+      <%= render cell %>
+    <% end %>
+  </div>
+  <div class="row" id="row-3">
+    <% @row3.each do |cell| %>
+      <%= render cell %>
+    <% end %>
+  </div>
+</div>
