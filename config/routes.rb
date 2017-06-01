@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   resources :boards, only: [:show]
   resources :cells
+
+  get "/js_solution" => "js_solutions#show", as: :js_solution
 end

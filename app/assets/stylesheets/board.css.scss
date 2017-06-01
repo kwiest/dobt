@@ -1,5 +1,21 @@
-.cell {
-  display: inline-block;
-  padding: 20px;
-  border: 1px solid red;
+#board {
+  #result.highlight {
+    background-color: yellow;
+  }
+
+  .row {
+    min-height: 40px;
+
+    .cell {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid red;
+      text-align: center;
+      min-width: 40px;
+    }
+    .cell:empty:before {
+      // Set a default content to auto-set height
+      content: "\200b";
+    }
+  }
 }

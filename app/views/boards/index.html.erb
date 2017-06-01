@@ -1,0 +1,11 @@
+<h1>Tic Tac Toe Boards</h1>
+
+<p>
+  <%= link_to "View JS Solution", js_solution_path %>
+</p>
+
+<ul>
+  <% @boards.each do |board| %>
+    <li><%= link_to "Board #{board.id}", board %></li>
+  <% end %>
+</ul>
